@@ -1,0 +1,30 @@
+{
+  "name": "ecommerce-legacy-solid",
+  "version": "1.0.0",
+  "description": "Projeto legado para refatoração SOLID",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "prisma:seed": "tsx prisma/seed.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.0.0",
+    "express": "^4.21.0",
+    "nodemailer": "^7.0.11",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.19.27",
+    "@types/nodemailer": "^7.0.4",
+    "prisma": "^6.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0",
+    "vitest": "^3.2.7"
+  }
+}

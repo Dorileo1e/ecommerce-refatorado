@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.db
+*.db-journal
+prisma/*.db
+prisma/*.db-journal
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+app.log
+.env
+.vscode/
